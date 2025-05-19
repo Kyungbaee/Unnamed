@@ -5,7 +5,7 @@
 
 ### **1. 오픈월드 환경 구축 및 최적화**
 
-![image.png](attachment:be9f5394-1c62-4025-b832-377183e002de:image.png)
+![Image](https://github.com/user-attachments/assets/6c7d1754-5c32-42b0-bad2-2b0f0d5091d7)
 
 - **지형 생성 및 환경 구축**: Quixel Bridge를 활용한 하이퀄리티 지형과 텍스처 적용
 - **조명 및 분위기 설정**: 실시간 라이팅과 포스트 프로세싱 적용으로 게임 환경의 몰입감 강화
@@ -13,9 +13,10 @@
 
 ### **2. 캐릭터 컨트롤 및 전투 시스템 구현**
 
-![image.png](attachment:293ed810-f2fe-4257-be56-c281549f09e7:image.png)
+![Image](https://github.com/user-attachments/assets/132a2425-f82d-4bf1-b1e3-17cc18c9cd3f)
 
-![classdiagram (1).png](attachment:6bb44ee4-d1c6-43ff-9fb0-80841756d1ea:classdiagram_(1).png)
+![Image](https://github.com/user-attachments/assets/84faba5a-48d8-411e-80eb-982941a6f355)
+
 
 - **`ACharacter` 클래스를 상속받은 `ABaseCharacter`**
     - 기본적인 **이동, 회피, 공격, 피격 반응(GetHit_Implementation)** 등의 기능을 구현
@@ -27,7 +28,7 @@
     - **체력(Attributes->GetHealthPercent)을 확인하여 피격 상태 `EAS_HitReaction` 적용**
     - `Enemy` 클래스에서는 적 AI 동작을 추가하여 별도의 피격 반응 및 전투 로직 구현
 
-![image.png](attachment:4ee0ee14-c120-4264-8c1f-65ce4ae9764c:image.png)
+![Image](https://github.com/user-attachments/assets/d3cef3fe-8621-4ced-ab41-0294f5c02ada)
 
 - **전투 시스템 및 무기 장착 시스템 개발**
     - 애니메이션 몽타주(Animation Montages)를 활용한 공격 애니메이션 재생
@@ -36,7 +37,7 @@
 
 ### **3. Enemy 행동 패턴 구현**
 
-![Enemy순서도 (1).png](attachment:cab98a78-ce0a-49c5-a18f-92f56bd2b2fb:Enemy순서도_(1).png)
+![Image](https://github.com/user-attachments/assets/be9014d5-b140-4ae7-8471-78b2d9ad365c)
 
 - **AI Behavior Tree 및 Blackboard 활용**
     - `AEnemy` 클래스에서 **순찰 → 감지 → 추적 → 공격 → 사망**의 AI 상태 머신 구현
@@ -46,9 +47,9 @@
 
 ### **4. Widget 및 HUD 시스템 구축**
 
-![HUD 캡처.PNG](attachment:6f10f422-b141-460b-bb6d-d71073d05fd6:99c5c751-b59e-40d2-8bc8-d10842ebf03a.png)
+![Image](https://github.com/user-attachments/assets/5db94569-ee16-41df-9d63-afca307faab7)
 
-![제목 없는 다이어그램 (1).png](attachment:f0cc6bb0-0b2c-49e7-8e4a-4c6adf02379a:제목_없는_다이어그램_(1).png)
+![Image](https://github.com/user-attachments/assets/1da66410-d20a-4ae0-b368-16252d411fd6)
 
 - **플레이어 상태 Widget 및 전투 HUD 시스템 구현**
     - `InitializeSlashOverlay()`에서 **플레이어가 시작할 때 HUD 초기화**
@@ -59,9 +60,10 @@
 
 - **Animation Blueprint**를 활용한 캐릭터 움직임 및 전투 모션 구현
 
-![image.png](attachment:b92a3bbb-a0c3-4a4a-ad1b-bba2e6da74c6:image.png)
+![Image](https://github.com/user-attachments/assets/09089603-d157-4521-8355-8d168b6b91bd)
 
-![image.png](attachment:932837f8-7f64-4ffd-ae89-e570aa0f7e16:image.png)
+![Image](https://github.com/user-attachments/assets/06a60b10-32c3-417f-beed-b1f63195b816)
+
 
 - **Inverse Kinematics (IK)** 적용하여,
 발 위치 조정 및 애니메이션 개선
